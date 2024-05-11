@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <form class="main-login-form" id="login-form">
+      <h2 class="main-title">Welcome!</h2>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" autocomplete="off" required />
+      <div id="emailError" class="error"></div>
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        autocomplete="off"
+        required
+      />
+      <span id="show-hide">Show/Hide</span>
+      <div id="passwordError" class="error"></div>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        autocomplete="off"
+        required
+      />
+      <div id="confirmPasswordError" class="error"></div>
+
+      <input type="submit" value="Login" />
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
